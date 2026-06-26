@@ -231,7 +231,7 @@ After the shared entry, the lanes split:
 ## 4. Infrastructure Diagram
 
 ```mermaid
-%%{init: {"theme":"base","themeVariables":{"background":"#f8fafc","primaryColor":"#ffffff","primaryTextColor":"#0f172a","primaryBorderColor":"#334155","lineColor":"#111827","clusterBkg":"#eef2ff","clusterBorder":"#334155","fontFamily":"Inter, Arial, sans-serif"}}}%%
+%%{init: {"theme":"base","themeVariables":{"background":"#0b1018","primaryColor":"#ffffff","primaryTextColor":"#0f172a","primaryBorderColor":"#cbd5e1","lineColor":"#ffffff","clusterBkg":"#111827","clusterBorder":"#e5e7eb","fontFamily":"Inter, Arial, sans-serif"}}}%%
 flowchart TB
     user["Users / Admins"]
 
@@ -395,19 +395,19 @@ flowchart TB
     ingress --> network
     tcp_gateway --> network
 
-    linkStyle default stroke:#111827,stroke-width:2.8px,color:#111827
+    linkStyle default stroke:#ffffff,stroke-width:3.4px,color:#ffffff
 
-    style frontend fill:#e8f1ff,stroke:#1d4ed8,stroke-width:2.5px,color:#0f172a
-    style identity fill:#edf5ff,stroke:#2563eb,stroke-width:2.5px,color:#0f172a
-    style backend fill:#ecfdf5,stroke:#15803d,stroke-width:2.5px,color:#052e16
-    style monolith fill:#fff1df,stroke:#ea580c,stroke-width:2.5px,color:#7c2d12
-    style micro fill:#e0f7ff,stroke:#0369a1,stroke-width:2.5px,color:#0c4a6e
-    style singledb fill:#ffe4e6,stroke:#dc2626,stroke-width:2.5px,color:#7f1d1d
-    style dbcluster fill:#e6e9ff,stroke:#4f46e5,stroke-width:2.5px,color:#1e1b4b
-    style delivery fill:#f3e8ff,stroke:#7e22ce,stroke-width:2.5px,color:#3b0764
-    style storage fill:#ffedd5,stroke:#c2410c,stroke-width:2.5px,color:#7c2d12
-    style kube fill:#e0f2fe,stroke:#075985,stroke-width:2.5px,color:#082f49
-    style observe fill:#f5f3ff,stroke:#6d28d9,stroke-width:2.5px,color:#3b0764
+    style frontend fill:#10213a,stroke:#93c5fd,stroke-width:2.5px,color:#ffffff
+    style identity fill:#132442,stroke:#93c5fd,stroke-width:2.5px,color:#ffffff
+    style backend fill:#0f2a1f,stroke:#86efac,stroke-width:2.5px,color:#ffffff
+    style monolith fill:#321b0d,stroke:#fdba74,stroke-width:2.5px,color:#ffffff
+    style micro fill:#082f49,stroke:#7dd3fc,stroke-width:2.5px,color:#ffffff
+    style singledb fill:#3b1117,stroke:#fca5a5,stroke-width:2.5px,color:#ffffff
+    style dbcluster fill:#1e1b4b,stroke:#c4b5fd,stroke-width:2.5px,color:#ffffff
+    style delivery fill:#2e1065,stroke:#d8b4fe,stroke-width:2.5px,color:#ffffff
+    style storage fill:#3a1c09,stroke:#fdba74,stroke-width:2.5px,color:#ffffff
+    style kube fill:#082f49,stroke:#7dd3fc,stroke-width:2.5px,color:#ffffff
+    style observe fill:#2e1065,stroke:#d8b4fe,stroke-width:2.5px,color:#ffffff
 
     classDef front fill:#ffffff,stroke:#2563eb,stroke-width:2px,color:#0f172a
     classDef back fill:#f0fdf4,stroke:#15803d,stroke-width:2px,color:#052e16
@@ -429,7 +429,7 @@ flowchart TB
 ## 5. Architecture Diagram
 
 ```mermaid
-%%{init: {"theme":"base","themeVariables":{"background":"#f8fafc","primaryColor":"#ffffff","primaryTextColor":"#0f172a","primaryBorderColor":"#334155","lineColor":"#111827","clusterBkg":"#eef2ff","clusterBorder":"#334155","fontFamily":"Inter, Arial, sans-serif"}}}%%
+%%{init: {"theme":"base","themeVariables":{"background":"#0b1018","primaryColor":"#ffffff","primaryTextColor":"#0f172a","primaryBorderColor":"#cbd5e1","lineColor":"#ffffff","clusterBkg":"#111827","clusterBorder":"#e5e7eb","fontFamily":"Inter, Arial, sans-serif"}}}%%
 flowchart TB
     user["User Action"]
     ui["Next.js UI"]
@@ -539,13 +539,13 @@ flowchart TB
     loki --> ui
     notify --> ui
 
-    linkStyle default stroke:#111827,stroke-width:2.8px,color:#111827
+    linkStyle default stroke:#ffffff,stroke-width:3.4px,color:#ffffff
 
-    style mono_flow fill:#fff1df,stroke:#ea580c,stroke-width:2.5px,color:#7c2d12
-    style micro_flow fill:#e0f7ff,stroke:#0369a1,stroke-width:2.5px,color:#0c4a6e
-    style single_flow fill:#ffe4e6,stroke:#dc2626,stroke-width:2.5px,color:#7f1d1d
-    style cluster_flow fill:#e6e9ff,stroke:#4f46e5,stroke-width:2.5px,color:#1e1b4b
-    style runtime fill:#f3e8ff,stroke:#7e22ce,stroke-width:2.5px,color:#3b0764
+    style mono_flow fill:#321b0d,stroke:#fdba74,stroke-width:2.5px,color:#ffffff
+    style micro_flow fill:#082f49,stroke:#7dd3fc,stroke-width:2.5px,color:#ffffff
+    style single_flow fill:#3b1117,stroke:#fca5a5,stroke-width:2.5px,color:#ffffff
+    style cluster_flow fill:#1e1b4b,stroke:#c4b5fd,stroke-width:2.5px,color:#ffffff
+    style runtime fill:#2e1065,stroke:#d8b4fe,stroke-width:2.5px,color:#ffffff
 
     classDef common fill:#ffffff,stroke:#2563eb,stroke-width:2px,color:#0f172a
     classDef mono fill:#fff7ed,stroke:#ea580c,stroke-width:2px,color:#7c2d12
